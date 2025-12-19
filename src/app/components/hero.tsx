@@ -1,5 +1,3 @@
-"use client";
-
 export default function () {
   return (
     <div className="bg-linear-to-b from-orange-50 to-amber-50 flex items-center justify-center px-4 py-36 pt-36 md:pt-48">
@@ -40,18 +38,8 @@ export default function () {
             Find Restaurants
           </button>
           <button className="flex items-center gap-2 bg-amber-50 hover:bg-orange-100 text-gray-900 px-8 py-4 rounded-xl font-medium border-2 border-orange-300 hover:border-orange-400 transition-all shadow-md hover:shadow-lg">
-            <svg
-              className="w-5 h-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
-              />
+            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M8.1 13.34l2.83-2.83L3.91 3.5a4.008 4.008 0 000 5.66l4.19 4.18zm6.78-1.81c1.53.71 3.68.21 5.27-1.38 1.91-1.91 2.28-4.65.81-6.12-1.46-1.46-4.2-1.1-6.12.81-1.59 1.59-2.09 3.74-1.38 5.27L3.7 19.87l1.41 1.41L12 14.41l6.88 6.88 1.41-1.41-6.88-6.88 1.47-1.47z" />
             </svg>
             Cook at Home
           </button>
