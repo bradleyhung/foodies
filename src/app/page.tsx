@@ -2,6 +2,7 @@ import Navbar from "./components/navbar";
 import Hero from "./components/hero";
 import Summary from "./components/summary";
 import Procedure from "./components/procedure";
+import Footer from "./components/footer"
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <Summary />
       <Procedure />
+      <Footer />
     </main>
   );
 }

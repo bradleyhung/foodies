@@ -14,10 +14,10 @@ export default function () {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
           <div className="text-center">
             <div className="relative inline-block mb-6">
-              <div className="w-20 h-20 bg-green-700 rounded-full flex items-center justify-center">
+              <div className="w-20 h-20 bg-red-500 rounded-full flex items-center justify-center">
                 <span className="text-white text-3xl font-bold">1</span>
               </div>
-              <div className="absolute -top-1 -right-1 w-10 h-10 bg-red-600 rounded-full flex items-center justify-center">
+              <div className="absolute -top-1 -right-1 w-10 h-10 bg-orange-400 rounded-full flex items-center justify-center">
                 <svg
                   className="w-5 h-5 text-white"
                   fill="none"
@@ -44,10 +44,10 @@ export default function () {
 
           <div className="text-center">
             <div className="relative inline-block mb-6">
-              <div className="w-20 h-20 bg-green-700 rounded-full flex items-center justify-center">
+              <div className="w-20 h-20 bg-red-500 rounded-full flex items-center justify-center">
                 <span className="text-white text-3xl font-bold">2</span>
               </div>
-              <div className="absolute -top-1 -right-1 w-10 h-10 bg-red-600 rounded-full flex items-center justify-center">
+              <div className="absolute -top-1 -right-1 w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center">
                 <svg
                   className="w-5 h-5 text-white"
                   fill="none"
@@ -74,10 +74,10 @@ export default function () {
 
           <div className="text-center">
             <div className="relative inline-block mb-6">
-              <div className="w-20 h-20 bg-green-700 rounded-full flex items-center justify-center">
+              <div className="w-20 h-20 bg-red-500 rounded-full flex items-center justify-center">
                 <span className="text-white text-3xl font-bold">3</span>
               </div>
-              <div className="absolute -top-1 -right-1 w-10 h-10 bg-red-600 rounded-full flex items-center justify-center">
+              <div className="absolute -top-1 -right-1 w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center">
                 <svg
                   className="w-5 h-5 text-white"
                   fill="currentColor"
