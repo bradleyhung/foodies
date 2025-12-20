@@ -2,6 +2,13 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import {
+  SignInButton,
+  SignUpButton,
+  UserButton,
+  SignedIn,
+  SignedOut,
+} from "@clerk/nextjs";
 
 export default function () {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -34,22 +41,23 @@ export default function () {
           </div>
         </div>
 
-        <button className="hidden md:flex items-center gap-2 bg-linear-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white px-6 py-2.5 rounded-lg transition-all shadow-md hover:shadow-lg">
-          <svg
-            className="w-5 h-5"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
-            />
-          </svg>
-          Chat Now
-        </button>
+        <div className="flex gap-2 items-center">
+          <SignedOut>
+            <SignUpButton mode="modal">
+              <button className="hidden md:flex items-center gap-2 bg-linear-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white px-6 py-2.5 rounded-lg transition-all shadow-md hover:shadow-lg">
+                Sign Up
+              </button>
+            </SignUpButton>
+            <SignInButton mode="modal">
+              <button className="hidden md:flex items-center gap-2 bg-linear-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white px-6 py-2.5 rounded-lg transition-all shadow-md hover:shadow-lg">
+                Sign In
+              </button>
+            </SignInButton>
+          </SignedOut>
+          <SignedIn>
+            <UserButton afterSignOutUrl="/" />
+          </SignedIn>
+        </div>
 
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -94,6 +102,23 @@ export default function () {
             </div>
             <div className="cursor-pointer hover:text-gray-900 py-2">
               AI Assistant
+            </div>
+            <div className="flex flex-col gap-2 items-center">
+              <SignedOut>
+                <SignUpButton mode="modal">
+                  <button className="flex w-full text-center justify-center gap-2 bg-linear-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white px-6 py-2.5 rounded-lg transition-all shadow-md hover:shadow-lg">
+                    Sign Up
+                  </button>
+                </SignUpButton>
+                <SignInButton mode="modal">
+                  <button className="flex w-full text-center justify-center gap-2 bg-linear-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white px-6 py-2.5 rounded-lg transition-all shadow-md hover:shadow-lg">
+                    Sign In
+                  </button>
+                </SignInButton>
+              </SignedOut>
+              <SignedIn>
+                <UserButton afterSignOutUrl="/" />
+              </SignedIn>
             </div>
           </div>
         </div>
