@@ -23,7 +23,7 @@ export default function () {
             width={40}
             height={40}
           />
-          <div className="font-bold text-xl text-orange-600">FoodieBot</div>
+          <div className="font-bold text-xl text-orange-600">Foodies</div>
         </div>
 
         <div className="hidden md:flex gap-8 text-gray-700">
